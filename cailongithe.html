@@ -5,69 +5,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu Bản Thân</title>
     <style>
+        /* CSS để trang web trông đẹp hơn */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
         header {
-            background: #35495e;
-            color: #fff;
-            padding: 1rem 0;
+            background: #2c3e50;
+            color: #ffffff;
+            padding: 2rem 0;
             text-align: center;
         }
-        section {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 1rem;
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem;
             background: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 8px;
         }
-        img {
-            display: block;
-            max-width: 150px;
-            margin: 1rem auto;
+        .profile-img {
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
+            display: block;
+            margin: 0 auto 1rem;
+            object-fit: cover;
+            border: 3px solid #3498db;
         }
         h1, h2 {
-            text-align: center;
-            color: #35495e;
+            color: #2c3e50;
         }
-        p {
-            text-align: justify;
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .skills li {
+            background: #3498db;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
         }
         footer {
             text-align: center;
-            margin-top: 2rem;
-            padding: 1rem;
-            background: #35495e;
-            color: white;
+            padding: 2rem;
+            font-size: 0.8rem;
+            color: #777;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Trang Giới Thiệu Bản Thân</h1>
-    </header>
+
+<header>
+    <h1>Xin chào, mình là [Tên Của Bạn]</h1>
+    <p>Web Developer | Designer | Enthusiast</p>
+</header>
+
+<div class="container">
+    <img src="https://via.placeholder.com/150" alt="Ảnh chân dung" class="profile-img">
+
     <section>
-        <img src="https://via.placeholder.com/150" alt="Ảnh Đại Diện">
-        <h2>Phạm Phan Phong Phú</h2>
-        <p>
-            Xin chào! Tôi là Nguyễn Văn A, một lập trình viên yêu công nghệ và sáng tạo.
-            Tôi có kinh nghiệm trong các lĩnh vực như phát triển frontend, backend và thiết kế giao diện người dùng.
-            Sở thích của tôi bao gồm đọc sách, du lịch và học hỏi những điều mới trong công nghệ.
-        </p>
-        <p>
-            Ngôn ngữ tôi sử dụng thường xuyên: HTML, CSS, JavaScript và Python.
-            Tôi mong muốn được đóng góp và học hỏi trong mọi cơ hội hợp tác mới.
-        </p>
+        <h2>Giới thiệu</h2>
+        <p>Chào bạn! Mình là một người đam mê công nghệ và sáng tạo. Hiện tại mình đang học tập/làm việc tại <strong>[Tên trường/công ty]</strong>. Mình thích tìm hiểu về lập trình web và xây dựng những sản phẩm có ích cho cộng đồng.</p>
     </section>
-    <footer>
-        <p>Liên hệ với tôi qua email: nguyenvana@example.com</p>
-        <p>© 2026 Nguyễn Văn A</p>
-    </footer>
+
+    <hr>
+
+    <section class="skills">
+        <h2>Kỹ năng</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript</li>
+            <li>Thiết kế UI/UX</li>
+            <li>Giao tiếp</li>
+        </ul>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Liên hệ</h2>
+        <p>Email: <a href="mailto:email@example.com">email@example.com</a></p>
+        <p>Facebook: <a href="#">fb.com/username</a></p>
+        <p>GitHub: <a href="#">github.com/username</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2026 Bản quyền thuộc về [Tên Của Bạn]</p>
+</footer>
+
 </body>
 </html>
