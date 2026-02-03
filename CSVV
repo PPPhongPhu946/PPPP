@@ -72,11 +72,11 @@
 
 <header>
     <h1>Xin chào, mình là [Tên Của Bạn]</h1>
-    <p>Web Developer | Designer | Enthusiast</p>
+    <p>Photogar | Designer | Enthusiast</p>
 </header>
 
 <div class="container">
-    <img src="https://via.placeholder.com/150" alt="Ảnh chân dung" class="profile-img">
+    <img src="https://via.placeholder.com/150" alt="Ảnh" class="profile-img">
 
     <section>
         <h2>Giới thiệu</h2>
@@ -111,3 +111,4 @@
 
 </body>
 </html>
+
