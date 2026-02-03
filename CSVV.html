@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giới Thiệu Bản Thân</title>
     <style>
+        /* --- PHẦN CSS CƠ BẢN --- */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -65,6 +66,44 @@
             color: #3498db;
             text-decoration: none;
         }
+
+        /* --- PHẦN CSS MỚI THÊM VÀO --- */
+        
+        /* 1. CSS cho Nút Liên Hệ */
+        .btn-contact {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #1877F2; /* Vẫn giữ màu xanh Facebook cho đẹp nhé */
+            color: white !important;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .btn-contact:hover {
+            background-color: #145dbf;
+        }
+
+        /* 2. CSS cho Góc Ảnh (Gallery) */
+        .gallery {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+        .gallery img {
+            width: 30%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 2px solid #eee;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            border-color: #3498db;
+        }
     </style>
 </head>
 <body>
@@ -72,10 +111,12 @@
 <header>
     <h1>Xin chào, mình là P4P</h1>
     <p>Photographer | Designer | Runner</p>
+    
+    <a href="https://www.facebook.com/lezanteo946" class="btn-contact" target="_blank">Liên hệ với tôi</a>
 </header>
 
 <div class="container">
-    <img src="LS20260128100901.png" alt="Ảnh" class="profile-img">
+    <img src="LS20260128100901.png" alt="Ảnh chân dung" class="profile-img">
 
     <section>
         <h2>Giới thiệu</h2>
@@ -97,6 +138,18 @@
     <hr>
 
     <section>
+        <h2>Góc Ảnh Của P4P</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/300x200/3498db/ffffff?text=Anh+1" alt="Ảnh chụp 1">
+            <img src="https://via.placeholder.com/300x200/e74c3c/ffffff?text=Anh+2" alt="Ảnh chụp 2">
+            <img src="https://via.placeholder.com/300x200/2ecc71/ffffff?text=Anh+3" alt="Ảnh chụp 3">
+        </div>
+        <p style="text-align: center; font-size: 0.9em; color: #666; margin-top: 10px;">Một vài khoảnh khắc mình đã ghi lại.</p>
+    </section>
+
+    <hr>
+
+    <section>
         <h2>Video Của Tôi</h2>
         <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
@@ -106,7 +159,7 @@
     <section>
         <h2>Liên hệ</h2>
         <p>Email: <a href="mailto:phongphu162020@gmail.com">phongphu162020@gmail.com</a></p>
-        <p>Facebook: <a href="#">fb.com/lezanteo946</a></p>
+        <p>Facebook: <a href="https://www.facebook.com/lezanteo946" target="_blank">fb.com/lezanteo946</a></p>
         <p>GitHub: <a href="#">github.com/PPPhongPhu946</a></p>
     </section>
 </div>
